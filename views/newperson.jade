@@ -1,0 +1,12 @@
+h1 New Person 
+
+form(action='/users',method='POST')
+
+    p Age:
+    input#age(type='number',name='age')
+    p Name:
+    input#name(type='text',name='name')
+    p Sex:
+    input#sex(type='boolean',name='sex')
+    p
+    button(type='submit') Create

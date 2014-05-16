@@ -1,0 +1,30 @@
+extends layout
+
+block body
+  div(ng-controller='AppCtrl')
+    h2 Hello {{name}}
+    ul.menu
+      li
+        a(href='/test5/view1') view1
+      li
+        a(href='/test5/view2') view2
+      li
+        a(href='/test5/view3') view3
+
+
+    div(ng-view)
+
+    div
+      | Angular Socket.io seed app: v
+      span(app-version)
+
+  //- script(src='//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.6/socket.io.min.js')
+  script(src='//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.6/socket.io.min.js')
+  script(src='bower_components/angular/angular.js')
+  script(src='bower_components/angular-route/angular-route.js')
+  script(src='bower_components/angular-socket-io/socket.js')
+  script(src='socketio5/js/app.js')
+  script(src='socketio5/js/services.js')
+  script(src='socketio5/js/controllers.js')
+  script(src='socketio5/js/filters.js')
+  script(src='socketio5/js/directives.js')

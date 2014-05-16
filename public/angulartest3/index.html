@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<base href="/">
+
+	<title>Starter Node and Angular</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="angulartest3/css/style.css"> <!-- custom styles -->
+
+	<!-- JS -->
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="bower_components/angular-route/angular-route.min.js"></script>
+
+	<!-- ANGULAR CUSTOM -->
+	<script src="angulartest3/js/controllers/MainCtrl.js"></script>
+	<script src="angulartest3/js/controllers/NerdCtrl.js"></script>
+	<script src="angulartest3/js/services/NerdService.js"></script>
+	<script src="angulartest3/js/controllers/GeekCtrl.js"></script>
+	<script src="angulartest3/js/services/GeekService.js"></script>
+
+	<script src="angulartest3/js/controllers/Sung1Ctrl.js"></script>
+	<script src="angulartest3/js/services/Sung1Service.js"></script>
+	<script src="angulartest3/js/controllers/Sung2Ctrl.js"></script>
+	<script src="angulartest3/js/services/Sung2Service.js"></script>
+	<script src="angulartest3/js/controllers/Sung3Ctrl.js"></script>
+	<script src="angulartest3/js/services/Sung3Service.js"></script>
+	<script src="angulartest3/js/controllers/Sung4Ctrl.js"></script>
+	<script src="angulartest3/js/services/Sung4Service.js"></script>
+
+	<script src="angulartest3/js/appRoutes.js"></script>
+	<script src="angulartest3/js/app.js"></script>
+</head>
+<body ng-app="sampleApp" ng-controller="NerdController">
+<div class="container">
+	
+	<!-- HEADER -->
+	<nav class="navbar navbar-inverse">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="/angulartest3">Stencil: Node and Angular</a>
+		</div>
+		<ul class="nav navbar-nav">
+			<li><a href="angulartest3/nerds">Nerds</a></li>
+			<li><a href="angulartest3/geeks">Geeks</a></li>
+			<li><a href="angulartest3/sung1">sung1</a></li>
+			<li><a href="angulartest3/sung2">sung2</a></li>
+			<li><a href="angulartest3/sung3">sung3</a></li>
+			<li><a href="angulartest3/sung4">sung4</a></li>
+		</ul>
+	</nav>
+
+	<!-- ANGULAR DYNAMIC CONTENT -->
+	<div ng-view></div>
+
+</div>
+</body>
+</html>

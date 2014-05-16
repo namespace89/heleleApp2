@@ -1,0 +1,5 @@
+h1 peoples All persons
+
+ul
+	each person in people
+		li: a(href='/users/#{person.name}') #{person.age} / #{person.name} / #{person.sex}

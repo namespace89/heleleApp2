@@ -1,0 +1,23 @@
+<h2>Fine Users</h2>
+
+<table class="table table-hover table-striped table-bordered">
+    <thead>
+        <tr>
+            <td>Age</td>
+            <td>Name</td>
+            <td>Sex</td>
+            <!-- <td>Price</td> -->
+        </tr>
+    </thead>
+    <tbody>
+    
+        <tr ng-repeat="user in users">
+            <td>{{ user.age }}</td>
+            <td>{{ user.name }}</td>
+            <td>{{ user.sex }}</td>
+            <!-- <td>${{ scotch.name }}
+            <td>${{ scotch.price }}</td> -->
+        </tr>
+        
+    </tbody>
+</table>

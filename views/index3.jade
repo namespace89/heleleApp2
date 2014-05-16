@@ -1,0 +1,25 @@
+extends layout
+
+block body
+  div(ng-controller='AppCtrl')
+    h2 Hello Bob
+    ul.menu
+      li
+        a(href='users4/view1') view1
+      li
+        a(href='users4/view2') view2
+      li
+        a(href='users4/view3') view3
+
+    div(ng-view)
+
+    div
+      | Angular seed app: v
+      span(app-version)
+
+  script(src='lib/angular/angular.js')
+  script(src='users4/app.js')
+  script(src='users4/services.js')
+  script(src='users4/controllers.js')
+  script(src='users4/filters.js')
+  script(src='users4/directives.js')
